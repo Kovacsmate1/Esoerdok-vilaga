@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu  ">
 
 <head>
     <meta charset="UTF-8">
@@ -32,39 +32,50 @@
     <br>
     <main>
         <section class="m-5">
-            <div id="carouselExample" class="carousel carousel-overlay slide">
-                <div class="carousel-inner rounded-5">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
+            <div id="carouselExampleDark" class="justify-content-center carousel carousel-overlay slide"
+                data-bs-theme="dark">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/vizeses.jpg" class="d-block w-100 rounded-5" alt="Waterfall">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/beka.jpg" class="d-block w-100 rounded-5" alt="Frog">
                     </div>
                     <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                        <img src="img/amazonas.jpg" class="d-block w-100 rounded-5" alt="Amazon rainforest">
                     </div>
                     <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                        <img src="img/hid.jpg" class="d-block w-100 rounded-5" alt="Bridge">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/papagaly.jpg" class="d-block w-100 rounded-5" alt="Parrot">
                     </div>
                 </div>
                 <div class="carousel-overlay-controls">
-                    <div>
-                        <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button"
-                            data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span class="carousel-icon-prev" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button"
-                            data-bs-target="#carouselExample" data-bs-slide="next">
-                            <span class="carousel-icon-next" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary slidergomb" type="button"
+                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    </button>
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1" class="slidergomb"></button>
+
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="slidergomb"></button>
+
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="slidergomb"></button>
+
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4" class="slidergomb"></button>
+
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                            aria-label="Slide 5" class="slidergomb"></button>
                     </div>
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary slidergomb" type="button"
+                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                    </button>
                 </div>
             </div>
         </section>

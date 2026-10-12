@@ -1,9 +1,50 @@
-body{
+body {
     background-color: #ffff;
     color: #000000;
     font-size: 18px;
 }
 
-.nav{
+.nav {
     margin: 0 auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    display: block;
+    width: 50% !important;
+    height: 500px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+
+.carousel-overlay-controls {
+    background-color: rgba(245, 245, 245, 0.25);
+    border-radius: 15px;
+    width: 45%;
+    padding: 10px;
+    margin: 0 auto;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+
+.slidergomb {
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.slidergomb:hover {
+    transform: scale(1.1);
+    color: rgb(0, 104, 31);
+    background-color: white;
 }
