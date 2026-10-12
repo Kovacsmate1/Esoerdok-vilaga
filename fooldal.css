@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
-    background-color: #ffff;
     color: #000000;
     font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .nav {
     margin: 0 auto;
 }
+
 
 img {
     display: block;
@@ -16,6 +23,7 @@ img {
     height: 400px;
     width: 100%;
     object-fit: cover;
+
 }
 
 .carousel-item img {
@@ -28,23 +36,62 @@ img {
 
 
 .carousel-overlay-controls {
-    background-color: rgba(245, 245, 245, 0.25);
-    border-radius: 15px;
-    width: 45%;
+    width: 50%;
     padding: 10px;
     margin: 0 auto;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+}
+
+.carousel-overlay-controls>.slidergomb {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
 }
 
 
 .slidergomb {
     transition: all 0.5s ease-in-out;
-    
+
 }
 
 .slidergomb:hover {
     transform: scale(1.1);
     color: rgb(0, 104, 31);
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(0, 104, 31);
+}
+
+.kozepgomb {
+    color: rgb(0, 104, 31);
     background-color: white;
+}
+
+#carouselExampleDark .carousel-item {
+    position: relative;
+}
+
+#carouselExampleDark .carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.carousel-caption-custom h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+.carousel-caption-custom p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px black;
 }
