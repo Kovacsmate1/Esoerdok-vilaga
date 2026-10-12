@@ -44,7 +44,7 @@ img {
     margin: 0 auto;
 }
 
-.carousel-overlay-controls>.slidergomb {
+.carousel-overlay-controls >.slidergomb {
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.541);
 }
