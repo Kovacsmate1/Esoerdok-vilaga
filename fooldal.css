@@ -1,20 +1,12 @@
-*{
-    box-sizing: border-box;
-}
-
-html,body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
     background-color: #ffff;
     color: #000000;
     font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 main {
@@ -25,6 +17,7 @@ main {
     margin: 0 auto;
 }
 
+
 img {
     display: block;
     margin: 0 auto;
@@ -33,6 +26,7 @@ img {
     height: 400px;
     width: 100%;
     object-fit: cover;
+
 }
 
 .carousel-item img {
@@ -45,13 +39,14 @@ img {
 
 
 .carousel-overlay-controls {
-    background-color: rgba(245, 245, 245, 0.25);
-    border-radius: 15px;
-    width: 45%;
+    width: 50%;
     padding: 10px;
     margin: 0 auto;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+}
+
+.carousel-overlay-controls>.slidergomb {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
 }
 
 
@@ -63,95 +58,11 @@ img {
 .slidergomb:hover {
     transform: scale(1.1);
     color: rgb(0, 104, 31);
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(0, 104, 31);
+}
+
+.kozepgomb {
+    color: rgb(0, 104, 31);
     background-color: white;
-}
-
-footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 40px 20px;
-    flex-shrink: 0;
-    width: 100%;
-}
-
-.footer-top,
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Márkanév és szövegek */
-.footer-brand h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-/* Gombok és linkek formázása */
-.footer-socials {
-    display: flex;
-    gap: 15px;
-}
-
-.social-btn {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-}
-
-.social-btn:hover {
-    background-color: #555;
-}
-
-/* Elválasztó vonal */
-.footer-divider {
-    border: 0;
-    border-top: 1px solid #333;
-    max-width: 1200px;
-    margin: 30px auto;
-}
-
-/* Alsó linkek stílusa */
-.footer-legal,
-.footer-nav {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-legal a,
-.footer-nav a {
-    color: #aaa;
-    text-decoration: none;
-    font-size: 0.85rem;
-    transition: color 0.2s ease;
-}
-
-.footer-legal a:hover,
-.footer-nav a:hover {
-    color: #fff;
-}
-
-/* Reszponzív elrendezés mobilon */
-@media (max-width: 768px) {
-
-    .footer-top,
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .footer-legal,
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
