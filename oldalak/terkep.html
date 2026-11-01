@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/terkep.css">
-    <title>Esőerdő-térkép</title>
+    <link rel="stylesheet" href="../css/terkep.css">
+    <title>Esőerdő - Térkép</title>
 </head>
 
-<body class="bg-white">
+<body>
     <header>
         <nav class="navbar sm:navbar-expand bg-1 fg-2">
             <div class="container-fluid">
                 <div class="drawer-body">
                     <div class="nav nav-pills navbar-nav">
-                        <a class="nav-link" href="/index.html">Főoldal</a>
+                        <a class="nav-link" href="../index.html">Főoldal</a>
                         <a class="nav-link" href="allatok.html">Állatok</a>
                         <a class="nav-link" href="novenyek.html">Növények</a>
-                        <a class="nav-link" href="terkep.html">Térkép</a>
+                        <a class="nav-link active-link" href="terkep.html">Térkép</a>
                         <a class="nav-link" href="quiz.html">Kvíz</a>
                     </div>
                 </div>
@@ -28,18 +31,17 @@
     </header>
 
     <main>
-        <div class="text-center">
+        <div class="text-center p-4">
             <gmp-map center="41.027748173921374, -92.41852445367961" zoom="13" map-id="DEMO_MAP_ID" style="height: 400px"></gmp-map>
-              <gmp-map
-            center="41.027748173921374, -92.41852445367961"
-            zoom="13"
-            map-id="DEMO_MAP_ID">
-            <gmp-advanced-marker
-                position="41.027748173921374, -92.41852445367961"
-                title="Ottumwa, IA"></gmp-advanced-marker>
-        </gmp-map>
+            <gmp-map
+                center="41.027748173921374, -92.41852445367961"
+                zoom="13"
+                map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker
+                    position="41.027748173921374, -92.41852445367961"
+                    title="Ottumwa, IA"></gmp-advanced-marker>
+            </gmp-map>
         </div>
-
     </main>
 
     <footer class="text-center">
@@ -68,14 +70,13 @@
             </div>
 
             <nav class="footer-nav">
-                <a href="/index.html">Főoldal</a>
-                <a href="oldalak/allatok.html">Állatok</a>
-                <a href="oldalak/novenyek.html">Növények</a>
-                <a href="oldalak/terkep.html">Térkép</a>
-                <a href="oldalak/quiz.html">Kvíz</a>
+                <a href="../index.html">Főoldal</a>
+                <a href="allatok.html">Állatok</a>
+                <a href="novenyek.html">Növények</a>
+                <a href="terkep.html">Térkép</a>
+                <a href="quiz.html">Kvíz</a>
             </nav>
         </div>
-
     </footer>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
