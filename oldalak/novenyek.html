@@ -4,10 +4,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/novenyek.css">
+    <title>Esőerdők növényvilága</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar sm:navbar-expand bg-1 fg-2">
+            <div class="container-fluid">
+                <div class="drawer-body">
+                    <div class="nav nav-pills navbar-nav">
+                        <a class="nav-link" href="/index.html">Főoldal</a>
+                        <a class="nav-link" href="allatok.html">Állatok</a>
+                        <a class="nav-link active-link" href="novenyek.html">Növények</a>
+                        <a class="nav-link" href="terkep.html">Térkép</a>
+                        <a class="nav-link" href="quiz.html">Kvíz</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-leaf"></i> Növényvilág</span>
+                <h1>Az esőerdők növényei</h1>
+                <p>Fedezd fel a trópusi esőerdők lenyűgöző növényvilágát — a hatalmas fáktól
+                    az apró orchideákig, a különleges húsevő növényektől a gyógyító hatású
+                    növényekig.</p>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-card">
+                        <div class="intro-card-icon">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3>80 000+</h3>
+                        <p>növényfaj él az esőerdőkben</p>
+                    </div>
+                    <div class="intro-card">
+                        <div class="intro-card-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>25%</h3>
+                        <p>a modern gyógyszerek negyede esőerdei növényekből származik</p>
+                    </div>
+                    <div class="intro-card">
+                        <div class="intro-card-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h3>28%</h3>
+                        <p>a világ oxigénjének közel harmada az esőerdőkből származik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layers-section">
+            <div class="container">
+                <h2 class="section-title">Az esőerdő rétegei</h2>
+                <p class="section-subtitle">Az esőerdő növényvilága négy fő rétegre oszlik, mindegyik egyedi
+                    növényfajoknak ad otthont.</p>
+
+                <div class="layers-grid">
+                    <div class="layer-card emergent">
+                        <div class="layer-number">01</div>
+                        <div class="layer-content">
+                            <h3>Óriásfák rétege</h3>
+                            <span class="layer-height">60–80 m</span>
+                            <p>A legmagasabb fák, amelyek a lombkorona fölé emelkednek. Ide tartozik
+                                például a brazil dió és a kapokfa. Ezek a fák hatalmas
+                                mennyiségű napfényt kapnak.</p>
+                        </div>
+                    </div>
+
+                    <div class="layer-card canopy">
+                        <div class="layer-number">02</div>
+                        <div class="layer-content">
+                            <h3>Lombkorona</h3>
+                            <span class="layer-height">25–45 m</span>
+                            <p>A legsűrűbb réteg, ahol a fák koronái összeérnek és egy zöld
+                                „ernyőt" alkotnak. Itt él az esőerdei élőlények többsége. Orchideák,
+                                broméliák és liánok borítják az ágakat.</p>
+                        </div>
+                    </div>
+
+                    <div class="layer-card understory">
+                        <div class="layer-number">03</div>
+                        <div class="layer-content">
+                            <h3>Aljnövényzet</h3>
+                            <span class="layer-height">5–25 m</span>
+                            <p>Kevés fény jut le ide, ezért a növények hatalmas leveleket
+                                fejlesztenek. Páfrányok, helikóniák és fiatal fák élnek ebben a
+                                félhomályos rétegben.</p>
+                        </div>
+                    </div>
+
+                    <div class="layer-card forest-floor">
+                        <div class="layer-number">04</div>
+                        <div class="layer-content">
+                            <h3>Erdőtalaj</h3>
+                            <span class="layer-height">0–5 m</span>
+                            <p>Az erdő legsötétebb rétege. Mohák, gombák és bomló levelek
+                                borítják. A napfénynek csupán 2%-a jut le ide, mégis fontos szerepet
+                                tölt be a tápanyag-körforgásban.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plants-section">
+            <div class="container">
+                <h2 class="section-title">Különleges növények</h2>
+                <p class="section-subtitle">Ismerd meg az esőerdők legérdekesebb növényeit!</p>
+
+                <div class="plants-grid">
+                    <div class="plant-card">
+                        <div class="plant-card-img">
+                            <img src="../img/Rafflesia.webp" alt="Rafflesia">
+                            <div class="plant-card-overlay"></div>
+                        </div>
+                        <div class="plant-card-body">
+                            <span class="plant-tag">Különleges virág</span>
+                            <h3>Rafflesia</h3>
+                            <p>A világ legnagyobb virága, átmérője elérheti az 1 métert! Kellemetlen
+                                szaga miatt „hullabűzvirágnak" is nevezik. Délkelet-Ázsia esőerdőiben
+                                található.</p>
+                        </div>
+                    </div>
+
+                    <div class="plant-card">
+                        <div class="plant-card-img">
+                            <img src="../img/Orchidea.jpg" alt="Orchidea">
+                            <div class="plant-card-overlay"></div>
+                        </div>
+                        <div class="plant-card-body">
+                            <span class="plant-tag">Epifita</span>
+                            <h3>Orchideák</h3>
+                            <p>Több mint 25 000 faj létezik, és rengeteg közülük az esőerdőkben él.
+                                Más növényekre telepedve, a levegőből és az esőből nyerik
+                                tápanyagaikat.</p>
+                        </div>
+                    </div>
+
+                    <div class="plant-card">
+                        <div class="plant-card-img">
+                            <img src="../img/Kancsoka.jpg" alt="Kancsóka">
+                            <div class="plant-card-overlay"></div>
+                        </div>
+                        <div class="plant-card-body">
+                            <span class="plant-tag">Húsevő növény</span>
+                            <h3>Kancsóka</h3>
+                            <p>Csőszerű leveleivel csapdába ejti a rovarokat. A kancsó belsejében lévő
+                                emésztőfolyadék segítségével bontja le zsákmányát, így nyerve
+                                tápanyagot.</p>
+                        </div>
+                    </div>
+
+                    <div class="plant-card">
+                        <div class="plant-card-img">
+                            <img src="../img/Bromelia.webp" alt="Bromélia">
+                            <div class="plant-card-overlay"></div>
+                        </div>
+                        <div class="plant-card-body">
+                            <span class="plant-tag">Vízgyűjtő</span>
+                            <h3>Broméliák</h3>
+                            <p>Levélrózsáikban esővizet gyűjtenek, ami apró tavakként szolgál
+                                békáknak, rovaroknak és más élőlényeknek. Fontosak az esőerdő
+                                ökoszisztémájában.</p>
+                        </div>
+                    </div>
+
+                    <div class="plant-card">
+                        <div class="plant-card-img">
+                            <img src="../img/Kapokfa.jpg" alt="Kapokfa">
+                            <div class="plant-card-overlay"></div>
+                        </div>
+                        <div class="plant-card-body">
+                            <span class="plant-tag">Óriásfa</span>
+                            <h3>Kapokfa</h3>
+                            <p>Az esőerdők egyik legmagasabb fája, akár 70 méterre is megnőhet.
+                                Gyümölcsei puha, pamutszerű rostot tartalmaznak, amiből párna- és
+                                matractöltelék készül.</p>
+                        </div>
+                    </div>
+
+                    <div class="plant-card">
+                        <div class="plant-card-img">
+                            <img src="../img/Tunderrozsa.jpg" alt="Victoria amazonica">
+                            <div class="plant-card-overlay"></div>
+                        </div>
+                        <div class="plant-card-body">
+                            <span class="plant-tag">Vízinövény</span>
+                            <h3>Óriás-tündérrózsa</h3>
+                            <p>Az Amazonas folyóban található, levelei akár 3 méter átmérőjűek
+                                is lehetnek! Olyan erősek, hogy egy kisgyereket is elbírnak.
+                                Éjszaka nyíló fehér virágai gyönyörűek.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facts-section">
+            <div class="container">
+                <h2 class="section-title light">Tudtad?</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <p>Az esőerdők fái naponta több ezer liter vizet párologtatnak el, ezzel
+                            saját esőt hoznak létre.</p>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+                        <p>Az esőerdei növények közül sok gyógyászati célra használható — a kinin
+                            (malária elleni szer) is esőerdei fáról származik.</p>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fa-solid fa-bugs"></i>
+                        </div>
+                        <p>Egyes növények hangyákkal „szövetkeznek" — a hangya védi a növényt a
+                            kártevőktől, cserébe lakhelyet és nektárt kap.</p>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                        <p>A „holdfény-virág" (Selenicereus) csak éjszaka nyílik, és csupán
+                            egyetlen éjszakára! Édes illata denevéreket és éjjeli rovarokat vonz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Az esőerdők világa</h2>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/?locale=hu_HU" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a
+                    href="https://kk.gov.hu/download/d/db/33000/Hozzajarulp_nyilatkozat_szemelyes_adatok_kezelesehez.pdf">Adatvédelmi
+                    nyilatkozat</a>
+                <a href="https://njt.jog.gov.hu/felhasznalasi_feltetelek">Felhasználási feltételek</a>
+                <a href="https://mkik.hu/suti-szabalyzat">Sütik (Cookie) szabályzat</a>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="/index.html">Főoldal</a>
+                <a href="allatok.html">Állatok</a>
+                <a href="novenyek.html">Növények</a>
+                <a href="terkep.html">Térkép</a>
+                <a href="quiz.html">Kvíz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7d674661b4.js"></script>
 
 </body>
 
