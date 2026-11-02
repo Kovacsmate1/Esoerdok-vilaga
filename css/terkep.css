@@ -40,12 +40,13 @@ main {
 }
 
 #googleMap {
-          width: 50%;
-    height: 500px;
+    width: 50%;
+    height: 700px;
     margin: 50px auto;
     border-radius: 15px;
     overflow: hidden;
-      }
+    box-shadow: 0 0 7px 7px #00000085;
+}
 
 header {
     position: sticky;

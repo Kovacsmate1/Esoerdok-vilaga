@@ -173,6 +173,133 @@ footer {
     color: var(--primary-light);
 }
 
+main {
+    flex: 1 0 auto;
+    min-width: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(5, 28, 16, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: var(--transition-fast);
+}
+
+.navbar {
+    width: 100%;
+    padding: 12px 24px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.nav .nav-link {
+    position: relative;
+    padding: 9px 18px;
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-fast);
+    text-decoration: none;
+}
+
+.nav .nav-link:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+
+.nav .nav-link.active-link {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.4), rgba(5, 150, 105, 0.3));
+    border: 1px solid rgba(110, 231, 183, 0.5);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    font-weight: 600;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 440px;
+    padding: 70px 24px;
+    background: url(../img/tigris.jpg) center/cover no-repeat;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(5, 28, 16, 0.75) 0%, rgba(2, 14, 8, 0.92) 85%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 22px;
+    margin-bottom: 20px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-light);
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid rgba(110, 231, 183, 0.35);
+    border-radius: var(--radius-pill);
+    backdrop-filter: blur(8px);
+}
+
+.hero-content h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #ffffff;
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    margin: 0;
+    font-size: clamp(1rem, 1.8vw, 1.18rem);
+    line-height: 1.7;
+    color: rgba(220, 245, 230, 0.92);
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 10px 14px;
