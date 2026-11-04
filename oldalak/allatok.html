@@ -36,7 +36,7 @@
         <section class="hero-section">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <span class="hero-badge"><i class="fa-solid fa-leaf"></i>Állatvilág</span>
+                <span class="hero-badge"><i class="fa-solid fa-paw"></i> Állatvilág</span>
                 <h1>Az esőerdők állatai</h1>
                 <p>Fedezd fel az esőerdők lenyűgöző állatvilágát a lombkorona színes
                     madaraitól a rejtőzködő nagymacskákig, a különleges kétéltűektől a hihetetlen
@@ -46,54 +46,144 @@
 
         <section class="intro-section">
             <div class="container">
+                <div class="text-center mb-4">
+                    <span class="filter-instruction-badge">
+                        <i class="fa-solid fa-arrow-pointer"></i> Válassz kategóriát a szűréshez
+                    </span>
+                </div>
                 <div class="intro-grid">
-                    <div class="intro-card">
+                    <div class="intro-card filter-card active" data-filter="emlosok" role="button" tabindex="0">
                         <div class="intro-card-icon">
                             <i class="fa-solid fa-paw"></i>
                         </div>
                         <h3>Emlősök</h3>
+                        <span class="filter-badge">6 faj</span>
                     </div>
-                    <div class="intro-card">
+
+                    <div class="intro-card filter-card" data-filter="hullok" role="button" tabindex="0">
                         <div class="intro-card-icon">
                             <i class="fa-solid fa-frog"></i>
                         </div>
                         <h3>Hüllők</h3>
+                        <span class="filter-badge">6 faj</span>
                     </div>
-                    <div class="intro-card">
+
+                    <div class="intro-card filter-card" data-filter="madarak" role="button" tabindex="0">
                         <div class="intro-card-icon">
                             <i class="fa-solid fa-dove"></i>
                         </div>
                         <h3>Madarak</h3>
+                        <span class="filter-badge">6 faj</span>
                     </div>
-                    <div class="intro-card">
+
+                    <div class="intro-card filter-card" data-filter="izeltlabuak" role="button" tabindex="0">
                         <div class="intro-card-icon">
                             <i class="fa-solid fa-bugs"></i>
                         </div>
                         <h3>Ízeltlábúak</h3>
+                        <span class="filter-badge">6 faj</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="animals-section">
+        <section class="animals-section" id="allatok-lista">
             <div class="container">
-                <h2 class="section-title">Különleges állatok</h2>
-                <p class="section-subtitle">Ismerd meg az esőerdők legérdekesebb lakóit!</p>
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="section-title text-start mb-1">Különleges állatok</h2>
+                        <p class="section-subtitle text-start mb-0">Kiválasztott kategória: Emlősök (6 faj)</p>
+                    </div>
+                    <div>
+                        <button id="reset-filter-btn" class="reset-filter-btn" type="button">
+                            <i class="fa-solid fa-list-ul"></i> Összes állat mutatása
+                        </button>
+                    </div>
+                </div>
 
                 <div class="animals-grid">
-                    <div class="animal-card">
+                    <div class="animal-card" data-category="emlosok">
                         <div class="animal-card-img">
-                            <img src="../img/julien.jpg" alt="Julien">
+                            <img src="../img/julien.jpg" alt="Gyűrűsfarkú maki">
                             <div class="animal-card-overlay"></div>
                         </div>
                         <div class="animal-card-body">
                             <span class="animal-tag">Emlősök</span>
-                            <h3>Gyűrűsfarkú majom</h3>
-                            <p>Madagaszkár trópusi erdőinek ikonikus, csíkos farkú és kifejezetten cuki, közkedvelt állata.</p>
+                            <h3>Gyűrűsfarkú maki</h3>
+                            <p>Madagaszkár trópusi erdőinek jellegzetes csíkos farkú félmajmája. Csapatokban él, nagyon
+                                szeret a napon sütkérezni, és ugrándozva közlekedik a fákon.</p>
                         </div>
                     </div>
 
-                    <div class="animal-card">
+                    <div class="animal-card" data-category="emlosok">
+                        <div class="animal-card-img">
+                            <img src="../img/Jaguar.webp" alt="Jaguár">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Emlősök</span>
+                            <h3>Jaguár</h3>
+                            <p>Az amerikai esőerdők csúcsragadozója. Rendkívül erős az állkapcsa, a teknősök páncélját
+                                is át tudja harapni, ráadásul kitűnően úszik a folyókban.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="emlosok">
+                        <div class="animal-card-img">
+                            <img src="../img/tigris.jpg" alt="Bengáli tigris">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Emlősök</span>
+                            <h3>Bengáli tigris</h3>
+                            <p>Ázsia trópusi és mangrove erdeiben él. Csíkos bundájával szinte láthatatlanul tud
+                                cserkészni a sűrű aljnövényzetben, és remekül úszik.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="emlosok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?w=800&q=80"
+                                alt="Háromujjú lajhár">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Emlősök</span>
+                            <h3>Háromujjú lajhár</h3>
+                            <p>A fák lombkoronájában lógva tölti az egész napot. Nagyon lassan mozog, a bundájában apró
+                                algák telepednek meg, ami zöldes álcát ad neki.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="emlosok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800&q=80"
+                                alt="Vörös bőgőmajom">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Emlősök</span>
+                            <h3>Vörös bőgőmajom</h3>
+                            <p>A hangja akár 5 kilométerre is elhallatszik a dzsungelben. Különleges torokcsontjával ad
+                                ki mély üvöltő hangokat, így jelzi a saját területét.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="emlosok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1590767950092-42b757581b4b?w=800&q=80"
+                                alt="Kapibara">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Emlősök</span>
+                            <h3>Kapibara</h3>
+                            <p>A világ legnagyobb rágcsálója. Dél-Amerikában a vízparti területeket kedveli, csapatokban
+                                legelészik, és ha veszélyt érez, azonnal a vízbe veti magát.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="hullok">
                         <div class="animal-card-img">
                             <img src="../img/nyilbeka.jpg" alt="Nyílméregbéka">
                             <div class="animal-card-overlay"></div>
@@ -101,43 +191,247 @@
                         <div class="animal-card-body">
                             <span class="animal-tag">Hüllők</span>
                             <h3>Nyílméregbéka</h3>
-                            <p>Apró termetű, de rendkívül mérgező kétéltű. Élénk, neonszerű színei figyelmeztetésül szolgálnak a ragadozók számára, hogy jelenléte
-                                életveszélyes.</p>
+                            <p>Alig pár centis, de az egyik legveszélyesebb kétéltű a Földön. Élénk színeivel
+                                figyelmezteti a ragadozókat, hogy a bőrének érintése is mérgező.</p>
                         </div>
                     </div>
 
-                    <div class="animal-card">
+                    <div class="animal-card" data-category="hullok">
                         <div class="animal-card-img">
-                            <img src="../img/tukan2.jpg" alt="Tukán">
+                            <img src="../img/beka.jpg" alt="Pirosszemű levelibéka">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Hüllők</span>
+                            <h3>Pirosszemű levelibéka</h3>
+                            <p>Nappal a levelek fonákján alszik összehúzódva, de ha megijesztik, hirtelen kinyitja
+                                élénkpiros szemeit, amivel megdöbbenti a támadóját.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="hullok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1531386151447-fd76ad50012f?w=800&q=80"
+                                alt="Zöld anakonda">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Hüllők</span>
+                            <h3>Zöld anakonda</h3>
+                            <p>A világ legsúlyosabb kígyófaja. A folyókban és mocsarakban leselkedik, ahol a víz
+                                felhajtóereje miatt meglepően gyorsan mozog hatalmas teste ellenére.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="hullok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1563281577-a7be47e20db9?w=800&q=80"
+                                alt="Párduckaméleon">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Hüllők</span>
+                            <h3>Párduckaméleon</h3>
+                            <p>Szemeit külön-külön tudja forgatni, így 360 fokban lát. Villámgyors nyelvével kapja el a
+                                rovarokat, és hangulata szerint változtatja a színeit.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="hullok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80"
+                                alt="Zöld leguán">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Hüllők</span>
+                            <h3>Zöld leguán</h3>
+                            <p>A magasabb ágakon szeret sütkérezni a napon. Ha megriasztják, akár tíz méteres
+                                magasságból is képes a vízbe ugrani anélkül, hogy baja esne.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="hullok">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1551085254-e96b210df58a?w=800&q=80"
+                                alt="Fekete kajmán">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Hüllők</span>
+                            <h3>Fekete kajmán</h3>
+                            <p>Az Amazonas medencéjének legnagyobb hüllője, akár 5 méteresre is megnő. Sötét pikkelyei
+                                miatt szinte láthatatlan a zavaros trópusi vizekben.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="madarak">
+                        <div class="animal-card-img">
+                            <img src="../img/tukan2.jpg" alt="Tarka tukán">
                             <div class="animal-card-overlay"></div>
                         </div>
                         <div class="animal-card-body">
                             <span class="animal-tag">Madarak</span>
-                            <h3>Tukán</h3>
-                            <p>Hatalmas, színes csőréről ismert madár, amely segít neki elérni a távoli
-                                ágakon lévő gyümölcsöket. A lombkorona felső szintjén él, és hangos
-                                kiáltásokkal kommunikál.</p>
+                            <h3>Tarka tukán</h3>
+                            <p>Hatalmas, színes csőre belül üreges és könnyű. Segít elérni a vékony ágakon csüngő
+                                gyümölcsöket, és a testhőmérséklete szabályozására is használja.</p>
                         </div>
                     </div>
 
-                    <div class="animal-card">
+                    <div class="animal-card" data-category="madarak">
                         <div class="animal-card-img">
-                            <img src="../img/pok.jpg" alt="Pok">
+                            <img src="../img/papagaly.jpg" alt="Sárga-kék ara papagáj">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Madarak</span>
+                            <h3>Sárga-kék ara</h3>
+                            <p>Intelligens, hűséges papagájfaj, a párok egész életükben együtt maradnak. Rendkívül erős
+                                csőrével még a kemény héjú magvakat is feltöri.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="madarak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=800&q=80"
+                                alt="Hárpiasas">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Madarak</span>
+                            <h3>Hárpiasas</h3>
+                            <p>Az egyik legerősebb ragadozó madár a világon. Hatalmas karmaival majmokat és lajhárokat
+                                kap fel közvetlenül a fák lombkoronájából.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="madarak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1520808663317-647b476a81b9?w=800&q=80"
+                                alt="Smaragdkolibri">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Madarak</span>
+                            <h3>Smaragdkolibri</h3>
+                            <p>Másodpercenként akár 80 szárnycsapásra is képes. Egy helyben lebegve szívja ki a virágok
+                                nektárját, és az egyetlen madár, amely hátrafelé is tud repülni.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="madarak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1550853024-fae8cd4be47f?w=800&q=80"
+                                alt="Kvézál">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Madarak</span>
+                            <h3>Kvézál (Quetzal)</h3>
+                            <p>Közép-Amerika legendás madara, zöld faroktollai akár egy méteresek is lehetnek. Az ősi
+                                maják a szabadság jelképeként tisztelték.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="madarak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800&q=80"
+                                alt="Piros bóbitás kakadu">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Madarak</span>
+                            <h3>Inka kakadu</h3>
+                            <p>Feltűnő, rózsaszínes tollazatáról és felmereszthető színes bóbitájáról könnyű felismerni.
+                                Nagyon társaságkedvelő madár, a fák odvaiban fészkel.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="izeltlabuak">
+                        <div class="animal-card-img">
+                            <img src="../img/pok.jpg" alt="Góliát madárpók">
                             <div class="animal-card-overlay"></div>
                         </div>
                         <div class="animal-card-body">
                             <span class="animal-tag">Ízeltlábúak</span>
                             <h3>Góliát madárpók</h3>
-                            <p> A világ legnagyobb pókja. Dél-Amerika
-                                esőerdőinek talajszintjén, üregekben él, és akár kisebb madarakat vagy rágcsálókat is
-                                képes elejteni.</p>
+                            <p>A világ legnehezebb pókfaja, lábterpesze elérheti a 30 centimétert. A talajban ásott
+                                üregekben lakik, és éjszaka vadászik rovarokra, békákra.</p>
                         </div>
                     </div>
 
+                    <div class="animal-card" data-category="izeltlabuak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80"
+                                alt="Azúrlepke">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Ízeltlábúak</span>
+                            <h3>Azúrlepke (Morpho)</h3>
+                            <p>Szárnyai ragyogó fémeskék színűek, ami a mikroszkopikus pikkelyek fénytöréséből adódik.
+                                Repülés közben szinte villódzik a napfényben.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="izeltlabuak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1594916892523-95e26978184f?w=800&q=80"
+                                alt="Levélvágó hangya">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Ízeltlábúak</span>
+                            <h3>Levélvágó hangya</h3>
+                            <p>A kivágott levéldarabokat a föld alatti bolyba viszik, de nem eszik meg őket:
+                                táptalajként használják, és speciális gombát növesztenek rajtuk.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="izeltlabuak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1508873696983-2df5293cb395?w=800&q=80"
+                                alt="Herkulesbogár">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Ízeltlábúak</span>
+                            <h3>Herkulesbogár</h3>
+                            <p>Hatalmas, fogós szarvaival az egyik leghosszabb bogár a Földön. A hímek a szarvaikkal
+                                küzdenek meg egymással a fák törzsén.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="izeltlabuak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?w=800&q=80"
+                                alt="Óriás botsáska">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Ízeltlábúak</span>
+                            <h3>Óriás botsáska</h3>
+                            <p>Mesterien álcázza magát: alakja, színe és még a szélben ringatózó mozgása is olyan, mint
+                                egy száraz faág, így észrevétlen marad.</p>
+                        </div>
+                    </div>
+
+                    <div class="animal-card" data-category="izeltlabuak">
+                        <div class="animal-card-img">
+                            <img src="https://images.unsplash.com/photo-1618237583688-66df989100fa?w=800&q=80"
+                                alt="Császárskorpió">
+                            <div class="animal-card-overlay"></div>
+                        </div>
+                        <div class="animal-card-body">
+                            <span class="animal-tag">Ízeltlábúak</span>
+                            <h3>Császárskorpió</h3>
+                            <p>Fényes, fekete páncélja UV-fény alatt kékesen világít a sötétben. Nappal elrejtőzik a
+                                kövek alatt, éjszaka indul vadászni vastag ollóival.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="text-center">
@@ -182,6 +476,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7d674661b4.js"></script>
     <script src="../js/datum.js"></script>
+    <script src="../js/allatok.js"></script>
 
 </body>
 
