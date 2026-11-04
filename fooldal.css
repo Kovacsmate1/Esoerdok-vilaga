@@ -314,6 +314,10 @@ header {
     background: #000;
 }
 
+#carouselExampleDark .carousel-item {
+    position: relative;
+}
+
 #carouselExampleDark .carousel-item img {
     display: block;
     width: 100%;
@@ -341,6 +345,7 @@ header {
     color: #fff;
     background: rgba(4, 24, 14, 0.72);
     backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 18px;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
@@ -395,6 +400,11 @@ header {
     color: #042413;
     border-color: var(--primary);
     transform: scale(1.1);
+}
+
+.slidergomb i {
+    font-size: 0.85rem;
+    pointer-events: none;
 }
 
 .carousel-overlay-controls .carousel-indicators {
