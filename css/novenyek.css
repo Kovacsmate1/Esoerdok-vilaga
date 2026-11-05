@@ -538,6 +538,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    header{
+        position: static;
+    }
+
     .navbar {
         padding: 10px 14px;
     }

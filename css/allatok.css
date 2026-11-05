@@ -403,6 +403,60 @@ header {
     color: var(--szurke);
 }
 
+.facts-section {
+    padding: 80px 24px;
+    background: linear-gradient(135deg, #051a0e, #0c3321);
+    color: #fff;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1140px;
+    margin: 30px auto 0;
+}
+
+.fact-card {
+    padding: 30px 24px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.fact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+    font-size: 22px;
+    color: var(--primary-light);
+    background: rgba(16, 185, 129, 0.2);
+    border-radius: 16px;
+}
+
+.fact-card p {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.65;
+    color: rgba(220, 245, 230, 0.9);
+}
+
+.facts-section h2 {
+    color: #fff;
+    text-align: center;
+}
+
 footer {
     flex-shrink: 0;
     width: 100%;
@@ -497,6 +551,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header{
+        position: static;
+    }
+
     .navbar {
         padding: 10px 14px;
     }
@@ -524,6 +582,15 @@ footer {
     }
 
     .animals-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+
+     .facts-section {
+        padding: 50px 16px;
+    }
+
+    .facts-grid {
         grid-template-columns: 1fr;
         max-width: 480px;
     }
