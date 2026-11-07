@@ -1,9 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    const maiDatum = new Date();
-    
-    const formaltDatum = maiDatum.toLocaleDateString('hu-HU');
-    
-    document.getElementById("aktualis-datum").innerText = formaltDatum;
-    
+document.addEventListener("DOMContentLoaded", function () {
+    const datumElem = document.getElementById("aktualis-datum");
+    if (datumElem) {
+        const maiDatum = new Date();
+        datumElem.innerText = maiDatum.toLocaleDateString('hu-HU');
+    }
 });

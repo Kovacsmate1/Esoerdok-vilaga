@@ -33,24 +33,78 @@
     </header>
 
     <main>
-        <section class="quiz-hero text-center py-5">
-            <div class="container py-5">
-                <span class="quiz-badge mb-3">
-                    <i class="fa-solid fa-pen-clip"></i> Tudáspróba
-                </span>
-                <h1 class="display-4 fw-bold mb-3">Esőerdei Kvíz</h1>
-                <p class="lead text-muted max-w-600 mx-auto mb-4">
-                    Teszteld tudásodat a trópusi esőerdők csodálatos világáról!
-                </p>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-brain"></i> Tudáspróba</span>
+                <h1>Esőerdei Kvíz</h1>
+                <p>Teszteld tudásodat a trópusi esőerdők csodálatos világáról! Válaszolj a 10 izgalmas kérdésre,
+                    és tudd meg, mennyire ismered bolygónk zöld szívének növény- és állatvilágát.</p>
             </div>
         </section>
-        <section>
-            <div class="row">
-                <div class="medium-8 medium-centered columns">
-                    <div id='container'>
-                        <div id='quiz'></div>
-                        <button class='secondary hollow btn btn-succes' id='next'>Következő</button>
-                        <button class='btn btn-success' id='start'>Újrakezdés</button>
+
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-card">
+                        <div class="intro-card-icon">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </div>
+                        <h3>10 kérdés</h3>
+                        <p>Változatos kérdések a növény- és állatvilágból</p>
+                    </div>
+                    <div class="intro-card">
+                        <div class="intro-card-icon">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <h3>Kényelmes tempó</h3>
+                        <p>Nincs visszaszámlálás, nyugodtan gondold át a válaszaidat</p>
+                    </div>
+                    <div class="intro-card">
+                        <div class="intro-card-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3>Azonnali értékelés</h3>
+                        <p>Részletes pontszám, érem és válasz-áttekintés a végén</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <div class="quiz-wrapper">
+                    <div class="quiz-card" id="quiz-doboz">
+                        <div class="quiz-header">
+                            <div class="quiz-meta">
+                                <span class="quiz-step-badge" id="kerdes-szamlalo">
+                                    <i class="fa-solid fa-compass"></i> Kérdés 1 / 10
+                                </span>
+                                <span class="quiz-percent-badge" id="szazalek-jelzo">10%</span>
+                            </div>
+                            <div class="quiz-progress-track">
+                                <div class="quiz-progress-bar" id="folyamatjelzo" style="width: 10%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-body" id="kerdes-kontener"></div>
+
+                        <div class="quiz-alert" id="kviz-figyelmeztetes" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Kérlek, válassz egy választ a folytatáshoz!</span>
+                        </div>
+
+                        <div class="quiz-footer" id="kviz-vezerlok">
+                            <button type="button" class="quiz-btn quiz-btn-secondary" id="gomb-vissza"
+                                style="display: none;">
+                                <i class="fa-solid fa-arrow-left"></i> Előző
+                            </button>
+                            <button type="button" class="quiz-btn quiz-btn-primary" id="gomb-tovabb">
+                                <span>Következő</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="quiz-results" id="eredmeny-kontener" style="display: none;"></div>
                     </div>
                 </div>
             </div>
@@ -98,10 +152,8 @@
         integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7d674661b4.js"></script>
-    <script src="/js/datum.js"></script>
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-    <script src='/js/quiz.js'></script>
-
+    <script src="../js/datum.js"></script>
+    <script src="../js/quiz.js"></script>
 
 </body>
 
