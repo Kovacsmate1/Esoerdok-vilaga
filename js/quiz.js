@@ -329,13 +329,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <div class="quiz-actions">
                 <button type="button" class="quiz-btn quiz-btn-primary" id="gomb-ujrakezdes">
-                    <i class="fa-solid fa-rotate-right"></i> Újrakezdés
+                    <i class="fa-solid fa-rotate-right"></i> <span>Újrakezdés</span>
                 </button>
                 <a href="allatok.html" class="quiz-pill-link">
-                    <i class="fa-solid fa-paw"></i> Állatok felfedezése
+                    <i class="fa-solid fa-paw"></i> <span>Állatok felfedezése</span>
                 </a>
                 <a href="novenyek.html" class="quiz-pill-link">
-                    <i class="fa-solid fa-leaf"></i> Növények felfedezése
+                    <i class="fa-solid fa-leaf"></i> <span>Növények felfedezése</span>
                 </a>
             </div>
         `;
